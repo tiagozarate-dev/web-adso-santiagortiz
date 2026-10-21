@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción SENA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1> Formulario SENA</h1>
+    <form id="formInscripcion">
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <div class="campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3">
+                <small id="error-nombre" class="error"></small>
+            </div>
+
+            <div class="campo">
+                <label for="documento">Documento:</label>
+                <input type="text" inputmode="numeric" id="documento" name="documento" required pattern="\d{6,10}" title="Debe contener solo números, entre 6 y 10 dígitos">
+                <small id="error-documento" class="error"></small>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                <small id="error-correo" class="error"></small>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Celular:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="^3\d{9}$" title="Debe ser un número de 10 dígitos que empiece por 3">
+                <small id="error-telefono" class="error"></small>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Curso</legend>
+
+            <div class="campo">
+                <label for="programa">Programa:</label>
+                <select id="programa" name="programa" required>
+                    <option value="">Seleccione un curso...</option>
+                    <option value="python">Python </option>
+                    <option value="javascript">JavaScript </option>
+                    <option value="basedatos">HTML y CSS</option>
+                </select>
+                <small id="error-programa" class="error"></small>
+            </div>
+
+            <div class="campo">
+                <p>Jornada:</p>
+                <label><input type="radio" name="jornada" value="manana" checked> Mañana</label>
+                <label><input type="radio" name="jornada" value="tarde"> Tarde</label>
+                <label><input type="radio" name="jornada" value="noche"> Noche</label>
+                <br>
+                <small id="error-jornada" class="error"></small>
+            </div>
+
+            <div class="campo">
+                <label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    Autorizo el tratamiento de mis datos personales
+                </label>
+                <br>
+                <small id="error-terminos" class="error"></small>
+            </div>
+        </fieldset>
+
+        <button type="submit">Inscribirse</button>
+    </form>
+
+    
+
+</body>
+</html>
