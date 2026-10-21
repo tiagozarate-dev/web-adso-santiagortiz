@@ -1,0 +1,93 @@
+/* 
+DIFERENCIA ENTRE PADDING Y MARGIN:
+- Padding (Relleno): Es el espacio interior de un elemento. 
+  Sirve para separar el contenido del borde de su propia caja.
+- Margin (Margen): Es el espacio exterior de un elemento. 
+  Sirve para separar la caja completa de otros elementos a su alrededor.
+
+*/
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #1f2933;
+}
+
+.cabecera {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cabecera h1 {
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem;
+    color: #1f5c00;
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: #52606d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contenedor-retos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.tarjeta-reto {
+    width: 280px;
+    padding: 2rem; 
+    margin: 1rem;  
+    border: 1px solid #e4e7eb;
+    border-radius: 16px; 
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-reto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(238, 216, 21, 0.4);
+}
+
+.tarjeta-reto h2 {
+    margin-top: 0;
+    color: #2e7d00;
+    font-size: 1.4rem;
+}
+
+.tarjeta-reto p {
+    color: #52606d;
+    margin-bottom: 1.5rem;
+}
+
+
+.boton-enlace {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border: 2px solid #e6c405;
+    border-radius: 8px;
+    background-color: #ecf008bd;
+    color: #000000;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enlace:hover {
+    background-color: #deee04;
+}
