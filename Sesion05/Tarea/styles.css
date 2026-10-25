@@ -1,0 +1,128 @@
+:root {
+    --color-principal: #0f172a;        
+    --color-secundario: #1e293b;      
+    --color-acento: #2563eb;          
+    --color-fondo: #f8fafc;            
+    --color-texto: #334155;            
+    --color-blanco: #ffffff;
+    --color-borde: #cbd5e1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+    border-bottom: 2px solid #93c5fd;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; 
+    background-color: var(--color-blanco);
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-principal);
+}
+
+th, td {
+    border: 1px solid var(--color-borde);
+    padding: 10px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+/* 
+   ESTILOS NUEVOS PARA EL FORMULARIO
+    */
+
+form {
+    width: 80%; 
+    margin: 20px auto; 
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border: 1px solid var(--color-borde);
+    text-align: left; 
+}
+
+label {
+    display: block; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    box-sizing: border-box; 
+}
+
+
+input:focus, select:focus, textarea:focus {
+    outline: none; 
+    border: 2px solid var(--color-acento);
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+}
