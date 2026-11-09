@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="app-tareas tarjeta">
+    <header class="app-tareas-encabezado">
+      <h1>✅ Mis tareas</h1>
+      <button class="boton boton-secundario" aria-label="Cambiar tema">🌙</button>
+    </header>
+
+    <form class="app-tareas-form">
+      <label for="nuevaTarea" class="oculto-visual">Nueva tarea</label>
+      <input type="text" id="nuevaTarea" placeholder="Escribe una tarea...">
+      <button type="submit" class="boton">Agregar</button>
+    </form>
+    <p class="alerta alerta-error oculto">⚠️ Escribe algo antes de agregar.</p>
+
+    <ul class="lista-tareas">
+      <li class="tarea">
+        <input type="checkbox">
+        <span class="texto-tarea">Tarea 1</span>
+        <span class="estado">Pendiente</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      
+      <li class="tarea hecha">
+        <input type="checkbox" checked>
+        <span class="texto-tarea">Tarea 2</span>
+        <span class="estado">Completado</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      
+      <li class="tarea hecha">
+        <input type="checkbox" checked>
+        <span class="texto-tarea">Tarea 3</span>
+        <span class="estado">Completado</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      
+      <li class="tarea">
+        <input type="checkbox">
+        <span class="texto-tarea">Tarea 4</span>
+        <span class="estado">Pendiente</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      
+      <li class="tarea">
+        <input type="checkbox">
+        <span class="texto-tarea">Tarea 5</span>
+        <span class="estado">Pendiente</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+    </ul>
+
+    <p class="contador">3 pendientes de 5</p>
+  </main>
+
+</body>
+</html>
