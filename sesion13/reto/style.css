@@ -1,0 +1,166 @@
+/* Variables de la marca ORA Tech */
+:root {
+    --color-principal: #0f172a;
+    --color-secundario: #1e293b;
+    --color-acento: #2563eb;
+    --color-fondo: #f8fafc;
+    --color-texto: #334155;
+    --color-blanco: #ffffff;
+    --color-borde: #cbd5e1;
+
+    --bs-body-font-family: Arial, sans-serif;
+    --bs-body-bg: var(--color-fondo);
+    --bs-body-color: var(--color-texto);
+}
+
+/* Botones con los colores de la marca */
+.btn-primary {
+    --bs-btn-bg: var(--color-acento);
+    --bs-btn-border-color: var(--color-acento);
+    --bs-btn-hover-bg: #1d4ed8;
+    --bs-btn-hover-border-color: #1d4ed8;
+    --bs-btn-active-bg: var(--color-principal);
+    --bs-btn-active-border-color: var(--color-principal);
+    --bs-btn-focus-shadow-rgb: 37, 99, 235;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--color-acento);
+    --bs-btn-border-color: var(--color-acento);
+    --bs-btn-hover-bg: var(--color-acento);
+    --bs-btn-hover-border-color: var(--color-acento);
+    --bs-btn-active-bg: var(--color-principal);
+    --bs-btn-active-border-color: var(--color-principal);
+}
+
+/* Encabezado con los colores de ORA Tech */
+.encabezado-marca {
+    background-color: var(--color-principal);
+    --bs-navbar-color: var(--color-blanco);
+    --bs-navbar-hover-color: #93c5fd;
+    --bs-navbar-active-color: var(--color-blanco);
+    --bs-navbar-brand-color: var(--color-blanco);
+    --bs-navbar-brand-hover-color: #93c5fd;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.3);
+}
+
+.encabezado-marca .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Ajustes visuales de marca (sin Flexbox, Grid ni media queries propias) */
+.lista-categorias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-categorias a {
+    display: block;
+    padding: 8px 0;
+    color: var(--color-texto);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.lista-categorias a:hover {
+    color: var(--color-acento);
+}
+
+.titulo-acento,
+.categoria {
+    color: var(--color-acento);
+    font-weight: bold;
+}
+
+.categoria {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-principal);
+    margin: 0;
+}
+
+.precio-tachado {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.producto-agotado {
+    opacity: 0.6;
+}
+
+.badge-agotado {
+    background-color: #dc2626;
+    color: var(--color-blanco);
+}
+
+/* Estilos de marca para el formulario */
+.form-label {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid var(--color-borde);
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+}
+
+.form-control:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25);
+}
+
+/* Pie de página */
+.pie {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+.pie h3 {
+    color: #93c5fd;
+}
+
+.pie a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.pie a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+
+.btn-whatsapp-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    --bs-btn-bg: #25d366;
+    --bs-btn-border-color: #25d366;
+    --bs-btn-hover-bg: #1ebe5d;
+    --bs-btn-hover-border-color: #1ebe5d;
+}
+
+.encabezado-modal {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+.encabezado-modal .btn-close {
+    filter: invert(1);
+}
+
+.mb-0 {
+    color: black;
+}
