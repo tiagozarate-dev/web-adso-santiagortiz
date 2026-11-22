@@ -1,17 +1,4 @@
-/* 
-DIFERENCIA ENTRE PADDING Y MARGIN:
-- Padding (Relleno): Es el espacio interior de un elemento. 
-  Sirve para separar el contenido del borde de su propia caja.
-- Margin (Margen): Es el espacio exterior de un elemento. 
-  Sirve para separar la caja completa de otros elementos a su alrededor.
 
-¿QUÉ ES MOBILE FIRST?
-- Mobile First (Primero el móvil) es una forma de trabajar en la que primero 
-  escribimos el código CSS pensando en cómo se va a ver la página en la pantalla 
-  pequeña de un celular. Después, usando "media queries", le agregamos reglas 
-  para que el diseño se adapte cuando la pantalla sea más grande, como en un 
-  computador de escritorio.
-*/
 
 * {
     box-sizing: border-box; 
