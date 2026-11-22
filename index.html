@@ -3,78 +3,419 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Retos - Santiago Ortiz</title>
+  <title>Santiago Ortiz — Portafolio de Desarrollo de Software | ADSO</title>
+  <meta name="description" content="Portafolio web de Santiago Ortiz Zárate, aprendiz de Análisis y Desarrollo de Software (ADSO) en el SENA. Proyectos en HTML5, CSS3, JavaScript y Bootstrap.">
+
+ 
+  <meta property="og:title" content="Santiago Ortiz — Portafolio de Desarrollo de Software">
+  <meta property="og:description" content="Explora los mejores retos y proyectos web desarrollados por Santiago Ortiz en el programa ADSO del SENA.">
+  <meta property="og:image" content="https://tiagozarate-dev.github.io/portafolio/img/og-preview.png">
+  <meta property="og:url" content="https://tiagozarate-dev.github.io/portafolio/">
+  <meta property="og:type" content="website">
+
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2308090a'/%3E%3Crect x='0.5' y='0.5' width='31' height='31' rx='5.5' fill='none' stroke='%2323252a'/%3E%3Cpath d='M9 21.5L16 9.5L23 21.5H9Z' fill='none' stroke='%23e4f222' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="cabecera">
-    <h1>Santiago Ortiz</h1>
-    <p class="bio">Aprendiz ADSO transformando ideas en código. Aquí presento los retos de mis primeras sesiones.</p>
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#portada" class="brand" aria-label="Inicio - Santiago Ortiz">
+        <svg class="brand-glyph" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <rect x="0.75" y="0.75" width="16.5" height="16.5" rx="4" stroke="#ffffff" stroke-width="1.2"/>
+          <path d="M5.5 12.2L9 5.8L12.5 12.2H5.5Z" stroke="#e4f222" stroke-width="1.2" stroke-linejoin="round"/>
+        </svg>
+        <span>Santiago Ortiz</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="btn-nav-pill">Disponible · ADSO</a>
+    </div>
   </header>
 
-  <main class="contenedor-retos">
-    <div class="tarjeta-reto">
-      <h2>Sesión 1</h2>
-      <p>Introducción y conceptos básicos</p>
-      <a href="Sesion01/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+  <main>
+   
+    <section id="portada" class="hero">
+      <div class="container">
+        <div class="hero-meta">
+          <span class="pill-tag">
+            <span class="status-dot" aria-hidden="true"></span>
+            SENA · Ficha 3491237
+          </span>
+          <span class="mono-meta">MEDELLÍN, CO · V2026.11</span>
+        </div>
 
-    <div class="tarjeta-reto">
-      <h2>Sesión 2</h2>
-      <p>Estructuras y semántica web</p>
-      <a href="Sesion02/Reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+        <div class="hero-header-grid">
+          <h1 class="hero-title">
+            Construyendo interfaces web limpias, semánticas y funcionales.
+          </h1>
+          <div class="hero-side">
+            <p class="hero-subtitle">
+              Soy Santiago Ortiz Zárate, aprendiz de Análisis y Desarrollo de Software (ADSO). Aquí documento la evolución técnica de mis retos prácticos en frontend y arquitectura web.
+            </p>
+            <div class="hero-actions">
+              <a href="#proyectos" class="btn-primary">Explorar proyectos</a>
+              <a href="https://github.com/tiagozarate-dev" target="_blank" rel="noopener noreferrer" class="link-arrow">
+                Perfil en GitHub <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
 
-    <div class="tarjeta-reto">
-      <h2>Sesión 3</h2>
-      <p>Estilos y diseño con CSS</p>
-      <a href="sesion03/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+       
+        <div class="hero-floor">
+          <div class="terminal-card">
+            <div class="terminal-topbar">
+              <div class="window-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mono-meta">adso-portfolio / retos-destacados</span>
+              <span class="badge badge-green">11 sesiones completadas</span>
+            </div>
+            <div class="terminal-metrics">
+              <div class="metric-item">
+                <span class="mono-label">ENFOQUE PRINCIPAL</span>
+                <p class="metric-value">HTML5 Semántico, CSS3 Grid/Flexbox y JS</p>
+              </div>
+              <div class="metric-item">
+                <span class="mono-label">FORMACIÓN ACTUAL</span>
+                <p class="metric-value">Tecnólogo ADSO — SENA</p>
+              </div>
+              <div class="metric-item">
+                <span class="mono-label">REPOSITORIO ACTIVO</span>
+                <p class="metric-value">GitHub Pages · Despliegue continuo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="tarjeta-reto">
-      <h2>Sesión 4</h2>
-      <p>Interactividad y lógica inicial</p>
-      <a href="sesion04/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+    
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="mono-label">01 / SELECCIÓN DE RETOS</span>
+            <h2 class="section-title">Proyectos destacados</h2>
+          </div>
+          <p class="section-desc">
+            Selección de mis mejores entregas prácticas, cada una con vista desplegada en vivo y acceso directo al código fuente en GitHub.
+          </p>
+        </div>
 
-    <div class="tarjeta-reto">
-      <h2>Sesión 5</h2>
-      <p>Formulario de inscripción SENA</p>
-      <a href="Sesion05/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+        <div class="projects-grid">
+          
+          <article class="project-card">
+            <div class="project-shot">
+              <img
+                src="img/sesion13.png"
+                alt="Captura de pantalla del reto Sesión 13: Aplicación de Bootstrap"
+                width="600"
+                height="340"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-id">SES-13</span>
+                <div class="tag-group">
+                  <span class="badge badge-violet">Bootstrap 5</span>
+                  <span class="badge">Responsive</span>
+                </div>
+              </div>
+              <h3 class="project-title">Aplicación de Bootstrap y Grillas</h3>
+              <p class="project-desc">
+                Maquetación ágil utilizando el sistema de columnas de Bootstrap, componentes interactivos y adaptación fluida a dispositivos móviles.
+              </p>
+              <div class="project-links">
+                <a href="sesion13/reto/index.html" class="btn-solid-neutral" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+                <a href="https://github.com/tiagozarate-dev/portafolio/tree/main/sesion13/reto" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
 
-    <div class="tarjeta-reto">
-      <h2>Sesión 6</h2>
-      <p>Vitrina de productos</p>
-      <a href="Sesión 06/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+          
+          <article class="project-card">
+            <div class="project-shot">
+              <img
+                src="img/sesion11.png"
+                alt="Captura de pantalla del reto Sesión 11: Guía de paletas de colores y botones indicativos"
+                width="600"
+                height="340"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-id">SES-11</span>
+                <div class="tag-group">
+                  <span class="badge badge-teal">UI Systems</span>
+                  <span class="badge">CSS3</span>
+                </div>
+              </div>
+              <h3 class="project-title">Guía de Paletas y Botones Indicativos</h3>
+              <p class="project-desc">
+                Sistema visual de tokens cromáticos, jerarquía de estados interactivos y controles de interfaz diseñados para claridad y contraste.
+              </p>
+              <div class="project-links">
+                <a href="sesión11/reto/index.html" class="btn-solid-neutral" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+                <a href="https://github.com/tiagozarate-dev/portafolio/tree/main/sesión11/reto" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
 
-    <div class="tarjeta-reto">
-      <h2>Sesión 7</h2>
-      <p>Galería y tablero de una app</p>
-      <a href="sesión07/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+          <article class="project-card">
+            <div class="project-shot">
+              <img
+                src="img/sesion08.png"
+                alt="Captura de pantalla del reto Sesión 08: Landing responsive de un emprendimiento"
+                width="600"
+                height="340"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-id">SES-08</span>
+                <div class="tag-group">
+                  <span class="badge badge-green">Landing Page</span>
+                  <span class="badge">Flexbox & Grid</span>
+                </div>
+              </div>
+              <h3 class="project-title">Landing Responsive de Emprendimiento</h3>
+              <p class="project-desc">
+                Página de aterrizaje comercial estructurada con secciones de propuesta de valor, catálogo destacado y llamados a la acción optimizados.
+              </p>
+              <div class="project-links">
+                <a href="sesión08/reto/index.html" class="btn-solid-neutral" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+                <a href="https://github.com/tiagozarate-dev/portafolio/tree/main/sesión08/reto" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
 
-    <div class="tarjeta-reto">
-      <h2>Sesión 8</h2>
-      <p>Landing responsive de un emprendimiento</p>
-      <a href="sesión08/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
-    <div class="tarjeta-reto">
-      <h2>Sesión 10</h2>
-      <p>Landing responsive de un emprendimiento</p>
-      <a href="sesion10/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
-    <div class="tarjeta-reto">
-      <h2>Sesión 11</h2>
-      <p>Guía de paletas de colores y botones indicativos</p>
-      <a href="sesión11/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
-    <div class="tarjeta-reto">
-      <h2>Sesión 13</h2>
-      <p>Aplicación de boostrap</p>
-      <a href="sesion13/reto/index.html" class="boton-enlace">Ver Reto</a>
-    </div>
+         
+          <article class="project-card">
+            <div class="project-shot">
+              <img
+                src="img/sesion07.png"
+                alt="Captura de pantalla del reto Sesión 07: Galería y tablero de una app"
+                width="600"
+                height="340"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-id">SES-07</span>
+                <div class="tag-group">
+                  <span class="badge badge-violet">CSS Grid</span>
+                  <span class="badge">Dashboard UI</span>
+                </div>
+              </div>
+              <h3 class="project-title">Galería y Tablero de Aplicación</h3>
+              <p class="project-desc">
+                Disposición modular tipo dashboard con tarjetas organizadas en CSS Grid, jerarquía visual compacta y distribución adaptativa.
+              </p>
+              <div class="project-links">
+                <a href="sesión07/reto/index.html" class="btn-solid-neutral" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+                <a href="https://github.com/tiagozarate-dev/portafolio/tree/main/sesión07/reto" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+         
+          <article class="project-card">
+            <div class="project-shot">
+              <img
+                src="img/sesion06.png"
+                alt="Captura de pantalla del reto Sesión 06: Vitrina de productos"
+                width="600"
+                height="340"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-id">SES-06</span>
+                <div class="tag-group">
+                  <span class="badge badge-teal">E-Commerce UI</span>
+                  <span class="badge">HTML5 / CSS3</span>
+                </div>
+              </div>
+              <h3 class="project-title">Vitrina Digital de Productos</h3>
+              <p class="project-desc">
+                Catálogo visual de productos tecnológicos con tarjetas estructuradas, precios claros, etiquetas de estado y transiciones suaves.
+              </p>
+              <div class="project-links">
+                <a href="Sesión 06/reto/index.html" class="btn-solid-neutral" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+                <a href="https://github.com/tiagozarate-dev/portafolio/tree/main/Sesión%2006/reto" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="project-card">
+            <div class="project-shot">
+              <img
+                src="img/sesion05.png"
+                alt="Captura de pantalla del reto Sesión 05: Formulario de inscripción SENA"
+                width="600"
+                height="340"
+                loading="lazy"
+              >
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-id">SES-05</span>
+                <div class="tag-group">
+                  <span class="badge badge-green">Formularios</span>
+                  <span class="badge">Validación HTML5</span>
+                </div>
+              </div>
+              <h3 class="project-title">Formulario de Inscripción SENA</h3>
+              <p class="project-desc">
+                Captura estructurada de datos con etiquetas accesibles, controles nativos de validación, agrupación lógica y estilos consistentes.
+              </p>
+              <div class="project-links">
+                <a href="Sesion05/reto/index.html" class="btn-solid-neutral" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+                <a href="https://github.com/tiagozarate-dev/portafolio/tree/main/Sesion05/reto" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+                  Código
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+ 
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-narrative">
+            <span class="mono-label">02 / PERFIL</span>
+            <h2 class="section-title">Sobre mí</h2>
+            <p class="about-lead">
+              Aprendiz de Análisis y Desarrollo de Software (ADSO) en el SENA, enfocado en convertir requerimientos reales en productos digitales bien estructurados.
+            </p>
+            <p class="about-text">
+              Mi enfoque combina la disciplina técnica del desarrollo web —HTML5 semántico, CSS3 moderno, JavaScript y modelado de bases de datos relacionales— con experiencia práctica en comercio electrónico y operación de proyectos. Además, cuento con dominio fluido del inglés tras residir tres años en Estados Unidos, lo que me permite trabajar directamente con documentación técnica y estándares internacionales.
+            </p>
+          </div>
+
+          <aside class="specs-panel" aria-label="Especificaciones técnicas">
+            <div class="spec-row">
+              <span class="mono-label">PROGRAMA</span>
+              <span class="spec-val">ADSO · SENA (Ficha 3491237)</span>
+            </div>
+            <div class="spec-row">
+              <span class="mono-label">FRONTEND</span>
+              <span class="spec-val">HTML5, CSS3, Flexbox, Grid, Bootstrap, JS</span>
+            </div>
+            <div class="spec-row">
+              <span class="mono-label">DATOS & BACKEND</span>
+              <span class="spec-val">MySQL, PostgreSQL, SQLite, Python</span>
+            </div>
+            <div class="spec-row">
+              <span class="mono-label">IDIOMAS</span>
+              <span class="spec-val">Español (Nativo) · Inglés (Avanzado)</span>
+            </div>
+            <div class="spec-row">
+              <span class="mono-label">UBICACIÓN</span>
+              <span class="spec-val">Medellín, Antioquia, Colombia</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <span class="mono-label">03 / CONTACTO</span>
+            <h2 class="section-title">Conversemos sobre código o proyectos</h2>
+            <p class="about-text">
+              Abierto a oportunidades de práctica, colaboración en desarrollo web y proyectos freelance. Respondo directamente por correo, WhatsApp o LinkedIn.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:Santiagoortizzarate@gmail.com" class="channel-item">
+                <span class="mono-label">CORREO ELECTRÓNICO</span>
+                <span class="channel-value">Santiagoortizzarate@gmail.com</span>
+              </a>
+              <a href="https://wa.me/573015562911" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <span class="mono-label">WHATSAPP / TELÉFONO</span>
+                <span class="channel-value">+57 301 556 2911</span>
+              </a>
+              <a href="https://www.linkedin.com/in/santiago-ortiz-zarate-891484416/" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <span class="mono-label">LINKEDIN</span>
+                <span class="channel-value">in/santiago-ortiz-zarate-891484416</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" action="mailto:Santiagoortizzarate@gmail.com" method="post" enctype="text/plain">
+            <div class="field-group">
+              <label for="nombre" class="mono-label">NOMBRE</label>
+              <input id="nombre" name="nombre" type="text" class="text-input" placeholder="Tu nombre o empresa" required>
+            </div>
+            <div class="field-group">
+              <label for="correo" class="mono-label">CORREO</label>
+              <input id="correo" name="correo" type="email" class="text-input" placeholder="nombre@dominio.com" required>
+            </div>
+            <div class="field-group">
+              <label for="mensaje" class="mono-label">MENSAJE</label>
+              <textarea id="mensaje" name="mensaje" rows="4" class="text-input" placeholder="Cuéntame sobre el proyecto o vacante..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono-meta">© 2026 Santiago Ortiz Zárate · Portafolio ADSO</span>
+      <div class="footer-links">
+        <a href="#portada" class="nav-link">Arriba ↑</a>
+        <a href="https://github.com/tiagozarate-dev" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-ortiz-zarate-891484416/" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
