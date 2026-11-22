@@ -1,0 +1,544 @@
+:root {
+    --color-principal: #0f172a;        
+    --color-secundario: #1e293b;      
+    --color-acento: #1d4ed8;          
+    --color-fondo: #f8fafc;            
+    --color-texto: #334155;            
+    --color-blanco: #ffffff;
+    --color-borde: #cbd5e1;
+    --color-whatsapp: #15803d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 1. Encabezado Sticky por encima del contenido */
+.encabezado {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo-img {
+    width: 40px; 
+    height: 40px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
+}
+
+.menu-navegacion a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--color-secundario);
+}
+
+.menu-navegacion a:hover,
+.menu-navegacion a:focus {
+    color: #93c5fd;
+}
+
+.menu-lateral {
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+    padding: 20px;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    color: var(--color-texto);
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.menu-lateral a:hover {
+    color: var(--color-acento);
+    font-weight: bold;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.portada {
+    background-color: var(--color-blanco);
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid var(--color-borde);
+    text-align: center;
+}
+
+.portada h2 {
+    color: var(--color-principal);
+    margin-top: 0;
+}
+
+.portada-imagen {
+    margin-top: 20px;
+}
+
+.portada-imagen img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Contraste >= 4.5:1 para Lighthouse Accessibility */
+.btn-llamado {
+    display: inline-block;
+    background-color: var(--color-whatsapp);
+    color: var(--color-blanco);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn-llamado:hover {
+    background-color: #166534;
+}
+
+.seccion-beneficios {
+    margin-bottom: 40px;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.beneficio-item {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--color-borde);
+    text-align: center;
+}
+
+.beneficio-item h3 {
+    color: var(--color-acento);
+    margin-top: 0;
+}
+
+.indicadores {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.indicador {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.vitrina {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* 3. Tarjeta relative con insignias absolute */
+.producto {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    position: relative; 
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.insignia-destacado {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.categoria {
+    display: block;
+    color: var(--color-acento);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-principal);
+    margin: 0;
+}
+
+/* Contraste 4.76:1 sobre blanco */
+.precio-tachado {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #64748b;
+    margin: 0;
+}
+
+.btn-detalle {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-detalle:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Se atenúa solo la imagen para mantener el contraste legible del texto */
+.producto.agotado img {
+    opacity: 0.55;
+    filter: grayscale(60%);
+}
+
+.etiqueta-agotado {
+    display: none;
+}
+
+.producto.agotado .etiqueta-agotado {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #b91c1c;
+    color: var(--color-blanco);
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.seccion-como-pedir {
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--color-borde);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lista-pasos {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* 4. Ventana Modal con :target por encima de todo */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-caja {
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-caja h2 {
+    color: var(--color-principal);
+    margin-top: 5px;
+}
+
+.modal-caja img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+
+.modal-lista {
+    padding-left: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 28px;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.modal-cerrar:hover {
+    background-color: #e2e8f0;
+}
+
+/* 2. Botón flotante de WhatsApp */
+.btn-whatsapp-flotante {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    width: 54px;
+    height: 54px;
+    background-color: var(--color-whatsapp);
+    color: var(--color-blanco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 900;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-whatsapp-flotante:hover {
+    background-color: #166534;
+    transform: scale(1.06);
+}
+
+/* Padding inferior amplio en móvil para que el botón flotante no tape el footer */
+.pie {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 30px 20px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.columna-footer h3 {
+    color: #93c5fd;
+    margin-top: 0;
+}
+
+.pie a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    line-height: 2.2;
+    display: inline-block;
+}
+
+.pie a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .encabezado {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    .menu-navegacion {
+        flex-direction: row;
+        width: auto;
+        gap: 0;
+    }
+
+    .menu-navegacion a {
+        border-bottom: none;
+        width: auto;
+        margin-left: 15px;
+    }
+    
+    .menu-navegacion a:hover {
+        border-bottom: 2px solid #93c5fd;
+    }
+
+    .portada {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 30px;
+    }
+
+    .portada-texto {
+        flex: 1;
+    }
+
+    .portada-imagen {
+        flex: 1;
+        margin-top: 0;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .indicadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vitrina {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pie {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "encabezado encabezado"
+            "menu contenido"
+            "pie pie";
+        min-height: 100vh;
+    }
+
+    .encabezado {
+        grid-area: encabezado;
+    }
+
+    .menu-lateral {
+        grid-area: menu;
+        border-right: 1px solid var(--color-borde);
+        border-bottom: none;
+    }
+
+    .contenido {
+        grid-area: contenido;
+        padding: 30px 40px;
+    }
+
+    .pie {
+        grid-area: pie;
+        margin-top: auto; 
+    }
+
+    .beneficios-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .indicadores {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .vitrina {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .producto.destacado {
+        grid-column: span 2;
+    }
+}
