@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comparativa técnica de rendimiento Lighthouse y desarrollo web entre CSS propio (Sesión 8) y Bootstrap (Sesión 13) para ORA Tech.">
+  <title>Comparativa Técnica: Sesión 8 vs. Sesión 13 | ORA Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <span class="etiqueta">ADSO — Análisis de Desarrollo Web</span>
+      <h1>Comparativa Técnica: CSS Propio vs. Bootstrap</h1>
+      <p>Evaluación de rendimiento, código y adaptabilidad del proyecto <strong>Los recuerdos de ella</strong> entre la Sesión 8 y la Sesión 13.</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    
+    <section class="seccion" id="lighthouse">
+      <h2>1. Auditoría Lighthouse (Modo Incógnito)</h2>
+      <p class="descripcion-seccion">
+        Resultados obtenidos al auditar las dos versiones publicadas en GitHub Pages desde una ventana de incógnito:
+      </p>
+
+      <div class="grid-capturas">
+        <article class="tarjeta-captura">
+          <div class="tarjeta-header">
+            <h3>Sesión 8 — CSS Propio</h3>
+            <span class="badge badge-gris">391 líneas de código</span>
+          </div>
+          <figure>
+            <img src="img/img2.png" alt="Resultados de Lighthouse en Sesión 8: Performance 98, Accessibility 92, Best Practices 100 y SEO 91">
+            <figcaption>
+              <strong>Puntajes:</strong> Performance: 98 | Accessibility: 92 | Best Practices: 100 | SEO: 91
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="tarjeta-captura">
+          <div class="tarjeta-header">
+            <h3>Sesión 13 — Bootstrap</h3>
+            <span class="badge badge-verde">198 líneas de código</span>
+          </div>
+          <figure>
+            <img src="img/img1.png" alt="Resultados de Lighthouse en Sesión 13: Performance 99, Accessibility 100, Best Practices 100 y SEO 100">
+            <figcaption>
+              <strong>Puntajes:</strong> Performance: 99 | Accessibility: 100 | Best Practices: 100 | SEO: 100
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+   
+    <section class="seccion" id="comparativa">
+      <h2>2. Tabla Comparativa de Desarrollo</h2>
+      <p class="descripcion-seccion">
+        Contraste técnico entre la maquetación desarrollada desde cero y la implementación apoyada en Bootstrap:
+      </p>
+
+      <div class="tabla-contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Criterio de Evaluación</th>
+              <th>Sesión 8 (Kit / CSS Propio)</th>
+              <th>Sesión 13 (Bootstrap)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Puntaje de Rendimiento (Performance)</strong></td>
+              <td>98 / 100</td>
+              <td><strong>99 / 100</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Accesibilidad, Buenas Prácticas y SEO</strong></td>
+              <td>92 / 100 / 91</td>
+              <td><strong>100 / 100 / 100</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Líneas de código escritas</strong></td>
+              <td>391 líneas</td>
+              <td><strong>198 líneas</strong> (reducción del 49.4%)</td>
+            </tr>
+            <tr>
+              <td><strong>Facilidad para hacerla responsive</strong></td>
+              <td>Media: requirió escribir media queries y reglas manuales de Flexbox/Grid para cada pantalla.</td>
+              <td><strong>Alta:</strong> el sistema de grillas de 12 columnas y las clases utilitarias resolvieron el diseño adaptable rápidamente.</td>
+            </tr>
+            <tr>
+              <td><strong>Tiempo de desarrollo</strong></td>
+              <td>Mayor tiempo invertido en estructurar, depurar y ajustar estilos base desde cero.</td>
+              <td><strong>Menor tiempo:</strong> mayor velocidad al contar con componentes, márgenes y tipografía predefinidos.</td>
+            </tr>
+            <tr>
+              <td><strong>Qué tan única se ve</strong></td>
+              <td><strong>100% personalizada:</strong> cada detalle visual responde a reglas escritas a la medida.</td>
+              <td>Estandarizada por defecto, aunque permite personalizar colores y detalles con CSS propio.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="seccion" id="conclusion">
+      <h2>3. Conclusión para el Proyecto Final</h2>
+      <div class="caja-conclusion">
+        <h3>Decisión: En el proyecto final usaremos Bootstrap</h3>
+        <p>
+          Para el desarrollo final de <strong>Los recuerdos de ella </strong> elegimos trabajar con <strong>Bootstrap</strong> como base principal, apoyándonos en una hoja de estilos propia únicamente para ajustes puntuales de identidad visual (colores de marca y detalles específicos).
+        </p>
+        <p>
+          Los datos de ambas sesiones respaldan esta decisión: al pasar de CSS propio a Bootstrap logramos reducir la extensión del código prácticamente a la mitad (de <strong>391 a 198 líneas</strong>), lo que hace que el proyecto sea mucho más limpio, ordenado y fácil de mantener. Además, los indicadores de calidad en Lighthouse mejoraron hasta alcanzar un <strong>99 en Performance y 100 perfecto en Accessibility, Best Practices y SEO</strong>, garantizando una experiencia rápida, accesible y totalmente responsive en menos tiempo de desarrollo.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <p>Santiago Ortiz Zárate — Análisis y Desarrollo de Software (ADSO) | SENA</p>
+    </div>
+  </footer>
+
+</body>
+</html>
